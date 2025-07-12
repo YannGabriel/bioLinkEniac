@@ -10,8 +10,8 @@ export const UserHeader = () => {
        alt="UserImage" />
 
        <div className="headerTextContainer self-center">
-        <h1 className="userName text-darkBlue font-extrabold text-xl">Yann Gabriel</h1>
-        <h2 className="userProfission text-darkBrown font-medium text-xs pl-[0.25rem]">FullStack Developer</h2>
+        <h1 className="userName text-darkBlue font-extrabold text-2xl">Yann Gabriel</h1>
+        <h2 className="userProfission text-darkBrown font-medium text-xg pl-[0.25rem]">FullStack Developer</h2>
        </div>
     </div>
   )
