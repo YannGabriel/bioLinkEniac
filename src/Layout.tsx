@@ -8,7 +8,7 @@ function Layout() {
   
   return (
     <main
-      className="mainContent p-normal bg-beigeBackground w-screen h-screen flex flex-col justify-center items-center"
+      className="mainContent p-normal bg-beigeBackground w-screen h-screen"
     >
       <UserHeader />
       <ButtonSection/>
