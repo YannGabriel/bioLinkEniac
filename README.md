@@ -1,54 +1,77 @@
-# React + TypeScript + Vite
+# 🧬 Projeto BioLink com React + TailwindCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém um projeto de cartão digital responsivo — estilo **BioLink** — desenvolvido com **React 19**, **TailwindCSS 3**, **Vite** e **TypeScript**. Ideal para criar um mini-portfólio pessoal e responsivo, como mostrado abaixo.
 
-Currently, two official plugins are available:
+## 📸 Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![preview](./src/assets//images//finalResult.png)
 
-## Expanding the ESLint configuration
+## 🚀 O que está incluído?
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Header com nome, imagem e título
+- Botão de destaque para portfólio
+- Links para redes sociais com ícones
+- Destaque para o último projeto
+- Embed de faixa do Spotify
+- Layout responsivo mobile-first
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Estrutura de Pastas (Nova)
+
+```
+src/
+├── assets/
+│   └── images/
+│       └── userImage.png
+│
+├── components/
+│   ├── atoms/
+│   │   └── Button.tsx
+│   │
+│   ├── molecules/
+│   │   ├── ButtonGroup/
+│   │   │   └── index.tsx
+│   │   ├── HeaderUser/
+│   │   │   └── index.tsx
+│   │   ├── LastProject/
+│   │   │   └── index.tsx
+│   │   ├── PortfolioButton/
+│   │   │   └── index.tsx
+│   │   └── SpotifyMusic/
+│   │       └── index.tsx
+│   │
+│   └── organisms/
+│       └── ButtonsSection/
+│           └── index.tsx
+│
+├── styles/
+│   ├── App.css
+│   └── Layout.tsx
+│
+├── config/
+│   └── social_medias.json
+│
+├── main.tsx
+├── App.tsx
+├── vite-env.d.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Tecnologias Utilizadas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React 19**
+- **TailwindCSS 3.4.17**
+- **TypeScript 5.8**
+- **Vite 6**
+- **React Icons**
+- ESLint + Plugins (para padronização e qualidade de código)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📌 Organização baseada em Atomic Design
+
+- **atoms/** – Botões e elementos básicos reutilizáveis
+- **molecules/** – Grupos funcionais de componentes
+- **organisms/** – Seções maiores e compostas
+- **styles/** – Estilos globais e layout
+- **config/** – Arquivos estáticos e configurações
+
+## 📄 Licença
+
+MIT © Yann Gabriel
